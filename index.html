@@ -10,56 +10,32 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
         }
         header {
-            background: #0078d7;
+            background-color: #0074D9;
             color: #fff;
-            padding: 10px 0;
             text-align: center;
+            padding: 10px 0;
         }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .service {
-            background: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        section {
+            margin: 20px;
         }
         .gallery img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
+            display: block;
+            margin: 10px auto;
+            border: 2px solid #ccc;
             border-radius: 5px;
+        }
+        .services, .gallery {
+            text-align: center;
         }
         footer {
             text-align: center;
-            background: #0078d7;
+            padding: 10px;
+            background-color: #0074D9;
             color: #fff;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info a {
-            color: #0078d7;
-            text-decoration: none;
         }
     </style>
 </head>
@@ -68,43 +44,39 @@
         <h1>Complesso Case Vacanze Rossetti</h1>
         <p>San Pietro in Bevagna - Salento, Puglia</p>
     </header>
-    <div class="container">
-        <section class="section">
-            <h2>Benvenuti!</h2>
-            <p>Case vacanze a 500 metri dal mare, situate a San Pietro in Bevagna, in provincia di Taranto. Le abitazioni sono di nuova costruzione, indipendenti e finemente arredate. Perfette per chi cerca un soggiorno all'insegna del relax, del buon cibo e del mare cristallino.</p>
-        </section>
-        
-        <section class="section">
-            <h2>Le Nostre Abitazioni</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Villino 4 Posti</h3>
-                    <p>Camera matrimoniale con letto a castello, bagno, cucina e spazi esterni con barbecue e doccia.</p>
-                </div>
-                <div class="service">
-                    <h3>Villino 7 Posti</h3>
-                    <p>Camere matrimoniali, cucina con doppio frigo, bagno spazioso e ampi spazi esterni.</p>
-                </div>
-                <div class="service">
-                    <h3>Villino 8 Posti</h3>
-                    <p>Camere matrimoniali con letti a castello, cucina ampia, bagno con lavatrice e spazi esterni per pranzi all'aperto.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Spiagge e Mare</h2>
-            <p>La nostra posizione è perfetta per famiglie con bambini, ragazzi e anziani. Le spiagge nelle vicinanze sono attrezzate e adatte a tutte le esigenze.</p>
-        </section>
-
-        <section class="section">
-            <h2>Contatti</h2>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:complessorossetti@hotmail.com">complessorossetti@hotmail.com</a></p>
-                <p>WhatsApp: <a href="https://wa.me/3892850748">3892850748</a></p>
-            </div>
-        </section>
-    </div>
+    <section>
+        <h2>Benvenuti!</h2>
+        <p>Case vacanze a 500 metri dal mare, situate a San Pietro in Bevagna, in provincia di Taranto. Le abitazioni sono di nuova costruzione, indipendenti e finemente arredate. Perfette per chi cerca un soggiorno all'insegna del relax del buon cibo e del mare cristallino.</p>
+    </section>
+    <section class="services">
+        <h2>Le Nostre Abitazioni</h2>
+        <div>
+            <h3>Villino 4 Posti</h3>
+            <img src="E7F6A204-C941-490B-B7D6-87EF03CF09A6 alt="Villino 4 Posti">
+            <p>Camere matrimoniali con letto a castello, bagno, cucina e spazi esterni con barbecue e doccia.</p>
+        </div>
+        <div>
+            <h3>Villino 7 Posti</h3>
+            <img src="B1B0C43D-4548-44AB-A1A5-693F0BE1C677 alt="Villino 7 Posti">
+            <p>Camere matrimoniali, cucina con doppio frigo, bagno spazioso e ampi spazi esterni.</p>
+        </div>
+        <div>
+            <h3>Villino 8 Posti</h3>
+            <img src="18049476-394A-4567-BDA7-223D9B132A5A" alt="Villino 8 Posti">
+            <p>Camere matrimoniali con letti a castello, cucina ampia, bagno con lavatrice e spazi esterni per pranzi all'aperto.</p>
+        </div>
+    </section>
+    <section class="gallery">
+        <h2>Spiagge e Mare</h2>
+        <p>La nostra posizione è perfetta per famiglie con bambini, ragazzi e anziani. Le spiagge nelle vicinanze sono attrezzate e adatte a tutte le esigenze.</p>
+        <img src="nome_del_file_immagine_spiaggia1.jpg" alt="Spiaggia 1">
+        <img src="nome_del_file_immagine_spiaggia2.jpg" alt="Spiaggia 2">
+    </section>
+    <section class="contacts">
+        <h2>Contatti</h2>
+        <p>Email: <a href="mailto:complessorossetti@hotmail.com">complessorossetti@hotmail.com</a></p>
+        <p>WhatsApp: 3892850748</p>
+    </section>
     <footer>
         <p>&copy; 2025 Complesso Case Vacanze Rossetti. Tutti i diritti riservati.</p>
     </footer>
